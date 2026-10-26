@@ -57,13 +57,8 @@
 		var $nav = $header.children('nav'),
 			$nav_li = $nav.find('li');
 
-		// Add "middle" alignment classes if we're dealing with an even number of items.
-			if ($nav_li.length % 2 == 0) {
-
-				$nav.addClass('use-middle');
-				$nav_li.eq( ($nav_li.length / 2) ).addClass('is-middle');
-
-			}
+		// "Middle" alignment classes disabled: nav items have unequal widths, so a centered
+		// divider line would cut through an item instead of falling between two.
 
 	// Main.
 		var	delay = 325,
